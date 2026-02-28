@@ -1,0 +1,178 @@
+:root {
+    --bg: #0f0f0f;
+    --card: #1b1b1b;
+    --text: #ffffff;
+    --accent: #c0392b;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background: #000;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.hero {
+    height: 100vh;
+    background: url("imgs/burger1.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    padding-left: 10%;
+}
+
+.hero h1 {
+    font-size: 50px;
+    max-width: 600px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: var(--accent);
+    padding: 12px 25px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.cardapio {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card {
+    background: var(--card);
+    padding: 30px;
+    width: 300px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card span {
+    display: block;
+    margin-top: 15px;
+    color: var(--accent);
+    font-weight: bold;
+}
+
+.sobre, .localizacao {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.mapa {
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* GALERIA */
+
+.galeria {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.imagens {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.imagens img {
+    width: 300px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.imagens img:hover {
+    transform: scale(1.05);
+}
+
+/* BOTÃO FLUTUANTE */
+
+.pedido-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--accent);
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.pedido-btn:hover {
+    transform: scale(1.1);
+}
+
+/* MODO CLARO */
+
+.light-mode {
+    --bg: #f5f5f5;
+    --card: #ffffff;
+    --text: #111;
+    --accent: #c0392b;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagens img {
+        width: 90%;
+    }
+}
