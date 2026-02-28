@@ -246,27 +246,40 @@ form button:hover {
 
 @media (max-width: 768px) {
 
+    nav section {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
     .hero {
-        padding-left: 5%;
-        text-align: left;
+        height: 80vh;
+        text-align: center;
     }
 
     .hero h1 {
-        font-size: 36px;
+        font-size: 32px;
+        margin-left: 0;
     }
 
-    .imagens {
-        flex-direction: column;
+    .overlay {
+        padding-left: 0;
         align-items: center;
     }
 
-    .imagens img {
-        width: 90%;
+    .item {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
     }
 
-    .tabela {
-        width: 90%;
-        padding: 20px;
+    .mapa iframe {
+        height: 250px;
     }
-
 }

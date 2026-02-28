@@ -159,12 +159,28 @@ nav a {
 
     nav {
         flex-direction: column;
-        gap: 15px;
         align-items: center;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .hero {
+        height: 80vh;
+        text-align: center;
     }
 
     .hero h1 {
-        font-size: 32px;
+        font-size: 28px;
+    }
+
+    .overlay {
+        padding-left: 0;
+        text-align: center;
     }
 
     .cards {
@@ -172,7 +188,17 @@ nav a {
         align-items: center;
     }
 
-    .imagens img {
+    .card {
         width: 90%;
+    }
+
+    .imagens img {
+        width: 95%;
+    }
+
+    .pedido-btn {
+        bottom: 20px;
+        right: 20px;
+        padding: 12px 20px;
     }
 }
